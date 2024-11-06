@@ -5,6 +5,7 @@ import plotly.graph_objs as go
 from trimesh import load as load_object_file
 import numpy as np
 import os
+import sys
 
 def load_data(csv_file):
     return pd.read_csv(csv_file)
@@ -612,6 +613,7 @@ def top_changes_in_recall(data_path):
 
 
 def presentation():
+    st.write("Python version:", sys.version)
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
     #++++++++++++++++++++ PREPROCESSING +++++++++++++++++++++#
     #++++++++++++++++++++++++++++++++++++++++++++++++++++++++#
